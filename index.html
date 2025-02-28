@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PXL Scoring App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>PXL Scoring App</h1>
+    <div class="container">
+        <input type="text" id="ideaTitle" placeholder="Idea Title">
+        <textarea id="ideaDescription" placeholder="Idea Description"></textarea>
+        
+        <div class="criteria">
+            <label><input type="checkbox" value="1"> Above the fold</label>
+            <label><input type="checkbox" value="2"> Noticeable within 5s</label>
+            <label><input type="checkbox" value="2"> Adding/Removing an element</label>
+            <label><input type="checkbox" value="1"> Increases user motivation</label>
+            <label><input type="checkbox" value="1"> Running on high-traffic pages</label>
+            <label><input type="checkbox" value="1"> Based on user testing</label>
+            <label><input type="checkbox" value="1"> Based on qualitative feedback</label>
+            <label><input type="checkbox" value="1"> Based on digital analytics</label>
+            <label><input type="checkbox" value="1"> Supported by heatmaps/eye tracking</label>
+        </div>
+
+        <select id="implementationTime">
+            <option value="3">Implementation < 4 hrs</option>
+            <option value="2">Implementation up to 8 hrs</option>
+            <option value="1">Implementation under 2 days</option>
+            <option value="0">Implementation more</option>
+        </select>
+        
+        <button onclick="addIdea()">Submit Idea</button>
+        <button onclick="exportToExcel()">Export to Excel</button>
+    </div>
+
+    <h2>Ideas List</h2>
+    <table id="ideasTable">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Score</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

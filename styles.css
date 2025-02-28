@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+.container { margin-bottom: 20px; }
+input, textarea, select { display: block; margin-bottom: 10px; width: 300px; padding: 5px; }
+button { margin-right: 10px; padding: 5px 10px; }
+.criteria label { display: block; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid black; padding: 10px; text-align: left; }
